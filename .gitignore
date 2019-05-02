@@ -1,0 +1,3 @@
+# Ignore Vagrant development setup
+install-opengrm.sh
+Vagrantfile
