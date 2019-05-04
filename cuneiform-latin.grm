@@ -92,147 +92,145 @@ MESZL_856 = "𒄩";
 MESZL_891 = "𒄖";
 MESZL_899 = "𒂖";
 
-AB = MESZL_223 : "AB";
-AD = MESZL_258 : "AD";
-AG = MESZL_127 : "AG";
-AH = MESZL_636 : "AH";
-AK = MESZL_127 : "AK";
-AL = MESZL_474 : "AL";
-AM = MESZL_309 : "AM";
-AN = MESZL_10 : "AN";
-AP = MESZL_223 : "AP";
-AQ = MESZL_127 : "AQ";
-AR = MESZL_726 : "AR";
-AS = MESZL_297 : "AS";
-AT = MESZL_258 : "AT";
-AZ = MESZL_297 : "AZ";
+AB = "AB" : MESZL_223;
+AD = "AD" : MESZL_258;
+AG = "AG" : MESZL_127;
+AH = "AH" : MESZL_636;
+AK = "AK" : MESZL_127;
+AL = "AL" : MESZL_474;
+AM = "AM" : MESZL_309;
+AN = "AN" : MESZL_10;
+AP = "AP" MESZL_223;
+AQ = "AQ" : MESZL_127;
+AR = "AR" : MESZL_726;
+AS = "AS" : MESZL_297;
+AT = "AT" : MESZL_258;
+AZ = "AZ" : MESZL_297;
 
-BA = MESZL_14 : "BA";
-DA = MESZL_561 : "DA";
-GA = MESZL_491 : "GA";
-HA = MESZL_856 : "HA";
-KA = MESZL_24 : "KA";
-LA = MESZL_89 : "LA";
-MA = MESZL_552 : "MA";
-NA = MESZL_110 : "NA";
-PA = MESZL_464 : "PA";
-QA = MESZL_99 : "QA";
-RA = MESZL_511 : "RA";
-SA = MESZL_172 : "SA";
-TA = MESZL_248 : "TA";
-ZA = MESZL_851 : "ZA";
+BA = "BA" : MESZL_14;
+DA = "DA" : MESZL_561;
+GA = "GA" : MESZL_491;
+HA = "HA" : MESZL_856;
+KA = "KA" : MESZL_24;
+LA = "LA" : MESZL_89;
+MA = "MA" : MESZL_552;
+NA = "NA" : MESZL_110;
+PA = "PA" : MESZL_464;
+QA = "QA" : MESZL_99;
+RA = "RA" : MESZL_511;
+SA = "SA" : MESZL_172;
+TA = "TA" : MESZL_248;
+ZA = "ZA" : MESZL_851;
 
-EB = MESZL_807 : "EB";
-ED = MESZL_560 : "ED";
-EG = MESZL_136 : "EG";
-EH = MESZL_636 : "EH";
-EK = MESZL_136 : "EK";
-EL = MESZL_899 : "EL";
-EM = MESZL_641 : "EM";
-EN = MESZL_164 : "EN";
-EP = MESZL_807 : "EP";
-EQ = MESZL_136 : "EQ";
-ER = MESZL_437 : "ER";
-ES = MESZL_469 : "ES";
-ET = MESZL_560 : "ET";
-EZ = MESZL_469 : "EZ";
+EB = "EB" : MESZL_807;
+ED = "ED" : MESZL_560;
+EG = "EG" : MESZL_136;
+EH = "EH" : MESZL_636;
+EK = "EK" : MESZL_136;
+EL = "EL" : MESZL_899;
+EM = "EM" : MESZL_641;
+EN = "EN" : MESZL_164;
+EP = "EP" : MESZL_807;
+EQ = "EQ" : MESZL_136;
+ER = "ER" : MESZL_437;
+ES = "ES" : MESZL_469;
+ET = "ET" : MESZL_560;
+EZ = "EZ" : MESZL_469;
 
-BE = MESZL_113 : "BE";
-DE = MESZL_736 : "DE";
-GE = MESZL_141 : "GE";
-HE = MESZL_631 : "HE";
-KE = MESZL_737 : "KE";
-LE = MESZL_85 : "LE";
-ME = MESZL_753 : "ME";
-NE = MESZL_313 : "NE";
-PE = MESZL_598 : "PE";
-QE = MESZL_815 : "QE";
-RE = MESZL_142 : "RE";
-SE = MESZL_181 : "SE";
-TE = MESZL_589 : "TE";
-ZE = MESZL_140 : "ZE";
+BE = "BE" : MESZL_113;
+DE = "DE" : MESZL_736;
+GE = "GE" : MESZL_141;
+HE = "HE" : MESZL_631;
+KE = "KE" : MESZL_737;
+LE = "LE" : MESZL_85;
+ME = "ME" : MESZL_753;
+NE = "NE" : MESZL_313;
+PE = "PE" : MESZL_598;
+QE = "QE" : MESZL_815;
+RE = "RE" : MESZL_142;
+SE = "SE" : MESZL_181;
+TE = "TE" : MESZL_589;
+ZE = "ZE" : MESZL_140;
 
-IB = MESZL_807 : "IB";
-ID = MESZL_560 : "ID";
-IG = MESZL_136 : "IG";
-IH = MESZL_636 : "IH";
-IK = MESZL_136 : "IK";
-IL = MESZL_348 : "IL";
-IM = MESZL_641 : "IM";
-IN = MESZL_261 : "IN";
-IP = MESZL_807 : "IP";
-IQ = MESZL_136 : "IQ";
-IR = MESZL_437 : "IR";
-IS = MESZL_469 : "IS";
-IT = MESZL_560 : "IT";
-IZ = MESZL_469 : "IZ";
+IB = "IB" : MESZL_807;
+ID = "ID" : MESZL_560;
+IG = "IG" : MESZL_136;
+IH = "IH" : MESZL_636;
+IK = "IK" : MESZL_136;
+IL = "IL" : MESZL_348;
+IM = "IM" : MESZL_641;
+IN = "IN" : MESZL_261;
+IP = "IP" : MESZL_807;
+IQ = "IQ" : MESZL_136;
+IR = "IR" : MESZL_437;
+IS = "IS" : MESZL_469;
+IT = "IT" : MESZL_560;
+IZ = "IZ" : MESZL_469;
 
-BI = MESZL_358 : "BI";
-DI = MESZL_736 : "DI";
-GI = MESZL_141 : "GI";
-HI = MESZL_631 : "HI";
-KI = MESZL_737 : "KI";
-LI = MESZL_85 : "LI";
-MI = MESZL_681 : "MI";
-NI = MESZL_380 : "NI";
-PI = MESZL_598 : "PI";
-QI = MESZL_815 : "QI";
-RI = MESZL_142 : "RI";
-SI = MESZL_181 : "SI";
-TI = MESZL_118 : "TI";
-ZI = MESZL_140 : "ZI";
+BI = "BI" : MESZL_358;
+DI = "DI" : MESZL_736;
+GI = "GI" : MESZL_141;
+HI = "HI" : MESZL_631;
+KI = "KI" : MESZL_737;
+LI = "LI" : MESZL_85;
+MI = "MI" : MESZL_681;
+NI = "NI" : MESZL_380;
+PI = "PI" : MESZL_598;
+QI = "QI" : MESZL_815;
+RI = "RI" : MESZL_142;
+SI = "SI" : MESZL_181;
+TI = "TI" : MESZL_118;
+ZI = "ZI" : MESZL_140;
 
-UB = MESZL_504 : "UB";
-UD = MESZL_596 : "UD";
-UG = MESZL_296 : "UG";
-UH = MESZL_636 : "UH";
-UK = MESZL_296 : "UK";
-UL = MESZL_698 : "UL";
-UM = MESZL_238 : "UM";
-UN = MESZL_501 : "UN";
-UP = MESZL_504 : "UP";
-UQ = MESZL_296 : "UQ";
-UR = MESZL_828 : "UR";
-US = MESZL_583 : "US";
-UT = MESZL_596 : "UT";
-UZ = MESZL_583 : "UZ";
+UB = "UB" : MESZL_504;
+UD = "UD" : MESZL_596;
+UG = "UG" : MESZL_296;
+UH = "UH" : MESZL_636;
+UK = "UK" : MESZL_296;
+UL = "UL" : MESZL_698;
+UM = "UM" : MESZL_238;
+UN = "UN" : MESZL_501;
+UP = "UP" : MESZL_504;
+UQ = "UQ" : MESZL_296;
+UR = "UR" : MESZL_828;
+US = "US" : MESZL_583;
+UT = "UT" : MESZL_596;
+UZ = "UZ" : MESZL_583;
 
-BU = MESZL_580 : "BU";
-DU = MESZL_350 : "DU";
-GU = MESZL_891 : "GU";
-HU = MESZL_132 : "HU";
-KU = MESZL_808 : "KU";
-LU = MESZL_812 : "LU";
-MU = MESZL_98 : "MU";
-NU = MESZL_112 : "NU";
-PU = MESZL_580 : "PU";
-QU = MESZL_339 : "QU";
-RU = MESZL_111 : "RU";
-SU = MESZL_16 : "SU";
-TU = MESZL_86 : "TU";
-ZU = MESZL_15 : "ZU";
+BU = "BU" : MESZL_580;
+DU = "DU" : MESZL_350;
+GU = "GU" : MESZL_891;
+HU = "HU" : MESZL_132;
+KU = "KU" : MESZL_808;
+LU = "LU" : MESZL_812;
+MU = "MU" : MESZL_98;
+NU = "NU" : MESZL_112;
+PU = "PU" : MESZL_580;
+QU = "QU" : MESZL_339;
+RU = "RU" : MESZL_111;
+SU = "SU" : MESZL_16;
+TU = "TU" : MESZL_86;
+ZU = "ZU" : MESZL_15;
 
-A = MESZL_839 : "A";
-E = MESZL_498 : "E";
-I = MESZL_252 : "I";
-U = MESZL_661 : "U";
+A = "A" : MESZL_839;
+E = "E" : MESZL_498;
+I = "I" : MESZL_252;
+U = "U" : MESZL_661;
 
-sumerograms = Optimize[AB | AD | AG | AH | AK | AL | AM | AN | AP | AQ | AR | AS | AT | AZ |
-                       BA | DA | GA | HA | KA | LA | MA | NA | PA | QA | RA | SA | TA | ZA |
-                       EB | ED | EG | EH | EK | EL | EM | EN | EP | EQ | ER | ES | ET | EZ |
-                       BE | DE | GE | HE | KE | LE | ME | NE | PE | QE | RE | SE | TE | ZE |
-                       IB | ID | IG | IH | IK | IL | IM | IN | IP | IQ | IR | IS | IT | IZ |
-                       BI | DI | GI | HI | KI | LI | MI | NI | PI | QI | RI | SI | TI | ZI |
-                       UB | UD | UG | UH | UK | UL | UM | UN | UP | UQ | UR | US | UT | UZ |
-                       BU | DU | GU | HU | KU | LU | MU | NU | PU | QU | RU | SU | TU | ZU |
-                       A | E | I | U];
+translated = Optimize[AB | AD | AG | AH | AK | AL | AM | AN | AP | AQ | AR | AS | AT | AZ |
+                      BA | DA | GA | HA | KA | LA | MA | NA | PA | QA | RA | SA | TA | ZA |
+                      EB | ED | EG | EH | EK | EL | EM | EN | EP | EQ | ER | ES | ET | EZ |
+                      BE | DE | GE | HE | KE | LE | ME | NE | PE | QE | RE | SE | TE | ZE |
+                      IB | ID | IG | IH | IK | IL | IM | IN | IP | IQ | IR | IS | IT | IZ |
+                      BI | DI | GI | HI | KI | LI | MI | NI | PI | QI | RI | SI | TI | ZI |
+                      UB | UD | UG | UH | UK | UL | UM | UN | UP | UQ | UR | US | UT | UZ |
+                      BU | DU | GU | HU | KU | LU | MU | NU | PU | QU | RU | SU | TU | ZU |
+                      A | E | I | U];
 
-separator = (("" : "-") | (space : space));
+unchanged_input = bytelib.kUpper | " " | "-";
+uppercased = StringFile['upcase.txt'];
+input_chars = (unchanged_input|uppercased)+;
 
-translit = sumerograms separator;
-
-uppercase = StringFile['upcase.txt'];
-
-export MAIN = Optimize[
-    (translit | space)+
+export Cuneifier = Optimize[
+    input_chars @ (translated ("-" : "")?)+
 ];
