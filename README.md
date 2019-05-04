@@ -11,5 +11,5 @@ This is a converter from transliterated syllables from the pp. 102-103 of the bo
 * https://github.com/maciej-nowak/ATFL-State-Finite-Machines
 * https://github.com/MaciejWanat/Corrector
 * https://github.com/adrmal/PJN-PTX/tree/master/Dictionary
-* https://weaveworld.org/android/sumerian/index.html (Android app for Sumerian proveerbs (with Cuneiform))
+* https://weaveworld.org/android/sumerian/index.html (Android app for Sumerian proverbs (with Cuneiform))
 
