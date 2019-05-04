@@ -14,6 +14,8 @@
 
 # Discrepancy: Finkel/Taylor use Neo-Assyrian signs for Sumerograms!
 
+import 'byte.grm' as bytelib;
+
 MESZL_10 = "𒀭";
 MESZL_14 = "𒁀";
 MESZL_15 = "𒍪";
@@ -226,15 +228,11 @@ character = Optimize[AB | AD | AG | AH | AK | AL | AM | AN | AP | AQ | AR | AS |
                       BU | DU | GU | HU | KU | LU | MU | NU | PU | QU | RU | SU | TU | ZU |
                       A | E | I | U];
 
-import 'byte.grm' as bytelib;
-
 unchanged_input = bytelib.kUpper | " " | "-";
 uppercased_input = StringFile['upcase.txt'];
-input_chars = (unchanged_input|uppercased_unput)+;
+input_chars = (unchanged_input|uppercased_input)+;
 
 word = character (("-" : "") character)*;
 text = word ((bytelib.kSpace : " ") word)*;
 
-export Cuneifier = Optimize[
-    input_chars @ text
-];
+export Cuneifier = Optimize[input_chars @ text];
