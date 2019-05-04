@@ -233,9 +233,7 @@ uppercased_input = StringFile['upcase.txt'];
 input_chars = (unchanged_input|uppercased_input)+;
 
 word = character (("-" : "") character)*;
-text = word ((bytelib.kSpace+ : " ") word)*;
+text = word (bytelib.kSpace+ word)*;
 
 export Cuneifier = Optimize[input_chars @ text];
-
-iword = Optimize[Invert[word]];
-export Decuneifier = Optimize[iword (bytelib.kSpace+ iword)*];
+export Decuneifier = Optimize[Invert[text]];
