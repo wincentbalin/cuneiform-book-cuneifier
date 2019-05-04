@@ -1,4 +1,4 @@
-cuneiform-latin.far: cuneiform-latin.grm byte.far
+cuneiform-latin.far: cuneiform-latin.grm byte.far upcase.txt
 	thraxcompiler --input_grammar=$< --output_far=$@
 
 byte.far: byte.grm 
