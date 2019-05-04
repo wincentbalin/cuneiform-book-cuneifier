@@ -236,4 +236,98 @@ word = character (("-" : "") character)*;
 text = word (bytelib.kSpace+ word)*;
 
 export Cuneifier = Optimize[input_chars @ text];
-export Decuneifier = Optimize[Invert[text]];
+export NaiveDecuneifier = Optimize[Invert[text]];
+
+
+# The inverted characters are transliterations from MesZL
+I_AN = MESZL_10 : "AN";
+I_BA = MESZL_14 : "BA";
+I_ZU = MESZL_15 : "ZU";
+I_SU = MESZL_16 : "SU";
+I_KA = MESZL_24 : "KA";
+I_LI = MESZL_85 : "LI";
+I_TU = MESZL_86 : "TU";
+I_LA = MESZL_89 : "LA";
+I_MU = MESZL_98 : "MU";
+I_SILA3 = MESZL_99 : "SILA3";
+I_NA = MESZL_110 : "NA";
+I_RU = MESZL_111 : "RU";
+I_NU = MESZL_112 : "NU";
+I_BAD = MESZL_113 : "BAD";
+I_TI = MESZL_118 : "TI";
+I_AK = MESZL_127 : "AK";
+I_HU = MESZL_132 : "HU";
+I_IG = MESZL_136 : "IG";
+I_ZI = MESZL_140 : "ZI";
+I_GI = MESZL_141 : "GI";
+I_RI = MESZL_142 : "RI";
+I_EN = MESZL_164 : "EN";
+I_SA = MESZL_172 : "SA";
+I_SI = MESZL_181 : "SI";
+I_AB = MESZL_223 : "AB";
+I_UM = MESZL_238 : "UM";
+I_TA = MESZL_248 : "TA";
+I_I = MESZL_252 : "I";
+I_AD = MESZL_258 : "AD";
+I_IN = MESZL_261 : "IN";
+I_UG = MESZL_296 : "UG";
+I_AZ = MESZL_297 : "AZ";
+I_AM = MESZL_309 : "AM";
+I_NE = MESZL_313 : "NE";
+I_KUM = MESZL_339 : "KUM";
+I_IL = MESZL_348 : "IL";
+I_DU = MESZL_350 : "DU";
+I_BI = MESZL_358 : "BI";
+I_NI = MESZL_380 : "NI";
+I_IR = MESZL_437 : "IR";
+I_PA = MESZL_464 : "PA";
+I_GISH = MESZL_469 : "GISH";
+I_AL = MESZL_474 : "AL";
+I_GA = MESZL_491 : "GA";
+I_E = MESZL_498 : "E";
+I_UN = MESZL_501 : "UN";
+I_UB = MESZL_504 : "UB";
+I_RA = MESZL_511 : "RA";
+I_MA = MESZL_552 : "MA";
+I_A2 = MESZL_560 : "A2";
+I_DE = MESZL_561 : "DA";
+I_BU = MESZL_580 : "BU";
+I_UZ = MESZL_583 : "UZ";
+I_TE = MESZL_589 : "TE";
+I_UD = MESZL_596 : "UD";
+I_PI = MESZL_598 : "PI";
+I_HI = MESZL_631 : "HI";
+I_AH = MESZL_636 : "AH";
+I_IM = MESZL_641 : "IM";
+I_U = MESZL_661 : "U";
+I_MI = MESZL_681 : "MI";
+I_UL = MESZL_698 : "UL";
+I_AR = MESZL_726 : "AR";
+I_DI = MESZL_736 : "DI";
+I_KI = MESZL_737 : "KI";
+I_ME = MESZL_753 : "ME";
+I_IB = MESZL_807 : "IB";
+I_KU = MESZL_808 : "KU";
+I_LU = MESZL_812 : "LU";
+I_KIN = MESZL_815 : "KIN";
+I_UR = MESZL_828 : "UR";
+I_A = MESZL_839 : "A";
+I_ZA = MESZL_851 : "ZA";
+I_HA = MESZL_856 : "HA";
+I_GU = MESZL_891 : "GU";
+I_EL = MESZL_899 : "EL";
+
+i_character = Optimize[I_AN | I_BA | I_ZU | I_SU | I_KA | I_LI | I_TU | I_LA |
+                       I_MU | I_SILA3 | I_NA | I_RU | I_NU | I_BAD | I_TI | I_AK |
+                       I_HU | I_IG | I_ZI | I_GI | I_RI | I_EN | I_SA | I_SI |
+                       I_AB | I_UM | I_TA | I_I | I_AD | I_IN | I_UG | I_AZ |
+                       I_AM | I_NE | I_KUM | I_IL | I_DU | I_BI | I_NI | I_IR |
+                       I_PA | I_GISH | I_AL | I_GA | I_E | I_UN | I_UB | I_RA |
+                       I_MA | I_A2 | I_DE | I_BU | I_UZ | I_TE | I_UD | I_PI |
+                       I_HI | I_AH | I_IM | I_U | I_MI | I_UL | I_AR | I_DI |
+                       I_KI | I_ME | I_IB | I_KU | I_LU | I_KIN | I_UR | I_A |
+                       I_ZA | I_HA | I_GU | I_EL];
+
+i_word = i_character (("" : "-") i_character)*;
+
+export Decuneifier = Optimize[i_word (bytelib.kSpace+ i_word)*];
