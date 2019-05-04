@@ -7,5 +7,11 @@ byte.far: byte.grm
 byte.grm: /usr/local/share/thrax/grammars/byte.grm
 	cp $< $@
 
+diagram: cuneiform-latin.far
+	farextract $<
+	fstdraw Cuneifier > Cuneifier.dot
+	dot -Gdpi=600 -o Cuneifier.png -Tpng Cuneifier.dot
+	rm Cuneifier.dot Cuneifier
+
 clean:
 	rm -f byte.far
