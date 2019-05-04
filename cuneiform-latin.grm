@@ -217,7 +217,7 @@ E = "E" : MESZL_498;
 I = "I" : MESZL_252;
 U = "U" : MESZL_661;
 
-translated = Optimize[AB | AD | AG | AH | AK | AL | AM | AN | AP | AQ | AR | AS | AT | AZ |
+character = Optimize[AB | AD | AG | AH | AK | AL | AM | AN | AP | AQ | AR | AS | AT | AZ |
                       BA | DA | GA | HA | KA | LA | MA | NA | PA | QA | RA | SA | TA | ZA |
                       EB | ED | EG | EH | EK | EL | EM | EN | EP | EQ | ER | ES | ET | EZ |
                       BE | DE | GE | HE | KE | LE | ME | NE | PE | QE | RE | SE | TE | ZE |
@@ -231,6 +231,11 @@ unchanged_input = bytelib.kUpper | " " | "-";
 uppercased = StringFile['upcase.txt'];
 input_chars = (unchanged_input|uppercased)+;
 
+separator = ("-" : "") | (bytelib.kSpace : " ");
+
+word = character (("-" : "") character)*;
+text = word ((bytelib.kSpace : " ") word)*;
+
 export Cuneifier = Optimize[
-    input_chars @ (translated ("-" : "")?)+
+    input_chars @ text
 ];
