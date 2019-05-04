@@ -12,22 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Technical references
-# * http://www.openfst.org/twiki/bin/view/GRM/ThraxQuickTour
-# * https://en.wikipedia.org/wiki/List_of_cuneiform_signs
-# * https://en.wikibooks.org/wiki/Sumerian/List (the better one)
-# * https://github.com/pardelapawel/thrax-grammars/
-# * https://github.com/maciej-nowak/ATFL-State-Finite-Machines
-# * https://github.com/MaciejWanat/Corrector
-# * https://github.com/adrmal/PJN-PTX/tree/master/Dictionary
-# * https://weaveworld.org/android/sumerian/index.html (Android app for Sumerian proveerbs (with Cuneiform))
-
 # Discrepancy: Finkel/Taylor use Neo-Assyrian signs for Sumerograms!
 
 import 'byte.grm' as bytelib;
-
-space = bytelib.kSpace;
-latin = bytelib.kGraph;
 
 MESZL_10 = "𒀭";
 MESZL_14 = "𒁀";
