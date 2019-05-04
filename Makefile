@@ -13,5 +13,8 @@ diagram: cuneiform-latin.far
 	dot -Gdpi=600 -o Cuneifier.png -Tpng Cuneifier.dot
 	rm Cuneifier.dot Cuneifier
 
+test: cuneiform-latin.far
+	thraxrewrite-tester --far=$< --rules=Cuneifier
+
 clean:
 	rm -f byte.far
