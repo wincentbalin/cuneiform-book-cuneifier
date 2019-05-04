@@ -6,3 +6,6 @@ Vagrantfile
 .vagrant/
 ubuntu-*-console.log
 
+# Ignore resulting file
+cuneiform-latin.far
+
