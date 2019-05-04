@@ -9,5 +9,8 @@ ubuntu-*-console.log
 # Ignore resulting file
 cuneiform-latin.far
 
+# Ignore intermediate files
+byte.far
+
 # Ignore thraxrewrite-tester history file
 .rewrite-tester-history
