@@ -236,3 +236,4 @@ word = character (("-" : "") character)*;
 text = word ((bytelib.kSpace : " ") word)*;
 
 export Cuneifier = Optimize[input_chars @ text];
+export Decuneifier = Optimize[Invert[Cuneifier]];
