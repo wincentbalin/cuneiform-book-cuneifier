@@ -1,0 +1,236 @@
+# Technical references
+# * http://www.openfst.org/twiki/bin/view/GRM/ThraxQuickTour
+# * https://en.wikipedia.org/wiki/List_of_cuneiform_signs
+# * https://en.wikibooks.org/wiki/Sumerian/List (the better one)
+# * https://github.com/pardelapawel/thrax-grammars/
+# * https://github.com/maciej-nowak/ATFL-State-Finite-Machines
+# * https://github.com/MaciejWanat/Corrector
+# * https://github.com/adrmal/PJN-PTX/tree/master/Dictionary
+# * https://weaveworld.org/android/sumerian/index.html (Android app for Sumerian proveerbs (with Cuneiform))
+
+# Discrepancy: Finkel/Taylor use Neo-Assyrian signs for Sumerograms!
+
+import 'byte.grm' as bytelib;
+
+space = bytelib.kSpace;
+latin = bytelib.kGraph;
+
+MESZL_10 = "𒀭";
+MESZL_14 = "𒁀";
+MESZL_15 = "𒍪";
+MESZL_16 = "𒋢";
+MESZL_24 = "𒅗";
+MESZL_85 = "𒇷";
+MESZL_86 = "𒌅";
+MESZL_89 = "𒆷";
+MESZL_98 = "𒈬";
+MESZL_99 = "𒋡";
+MESZL_110 = "𒈾";
+MESZL_111 = "𒊒";
+MESZL_112 = "𒉡";
+MESZL_113 = "𒁁";
+MESZL_118 = "𒋾";
+MESZL_127 = "𒀝";
+MESZL_132 = "𒄷";
+MESZL_136 = "𒅅";
+MESZL_140 = "𒍣";
+MESZL_141 = "𒄀";
+MESZL_142 = "𒊑";
+MESZL_164 = "𒂗";
+MESZL_172 = "𒊓";
+MESZL_181 = "𒋛";
+MESZL_223 = "𒀊";
+MESZL_238 = "𒌝";
+MESZL_248 = "𒋫";
+MESZL_252 = "𒄿";
+MESZL_258 = "𒀜";
+MESZL_261 = "𒅔";
+MESZL_296 = "𒊌";
+MESZL_297 = "𒊍";
+MESZL_309 = "𒄠";
+MESZL_313 = "𒉈";
+MESZL_339 = "𒄣";
+MESZL_348 = "𒅋";
+MESZL_350 = "𒁺";
+MESZL_358 = "𒁉";
+MESZL_380 = "𒉌";
+MESZL_437 = "𒅕";
+MESZL_464 = "𒉺";
+MESZL_469 = "𒄑";
+MESZL_474 = "𒀠";
+MESZL_491 = "𒂅";
+MESZL_498 = "𒂊";
+MESZL_501 = "𒌧";
+MESZL_504 = "𒌒";
+MESZL_511 = "𒊏";
+MESZL_552 = "𒈠";
+MESZL_560 = "𒀉";
+MESZL_561 = "𒁕";
+MESZL_580 = "𒁍";
+MESZL_583 = "𒊺𒄷";
+MESZL_589 = "𒋼";
+MESZL_596 = "𒌓";
+MESZL_598 = "𒉿";
+MESZL_631 = "𒄭";
+MESZL_636 = "𒄴";
+MESZL_641 = "𒅎";
+MESZL_661 = "𒌋";
+MESZL_681 = "𒈪";
+MESZL_698 = "𒌌";
+MESZL_726 = "𒅈";
+MESZL_736 = "𒁲";
+MESZL_737 = "𒆠";
+MESZL_753 = "𒈨";
+MESZL_807 = "𒅁";
+MESZL_808 = "𒆪";
+MESZL_812 = "𒇻";
+MESZL_815 = "𒆥";
+MESZL_828 = "𒌨";
+MESZL_839 = "𒀀";
+MESZL_851 = "𒍝";
+MESZL_856 = "𒄩";
+MESZL_891 = "𒄖";
+MESZL_899 = "𒂖";
+
+AB = MESZL_223 : "AB";
+AD = MESZL_258 : "AD";
+AG = MESZL_127 : "AG";
+AH = MESZL_636 : "AH";
+AK = MESZL_127 : "AK";
+AL = MESZL_474 : "AL";
+AM = MESZL_309 : "AM";
+AN = MESZL_10 : "AN";
+AP = MESZL_223 : "AP";
+AQ = MESZL_127 : "AQ";
+AR = MESZL_726 : "AR";
+AS = MESZL_297 : "AS";
+AT = MESZL_258 : "AT";
+AZ = MESZL_297 : "AZ";
+
+BA = MESZL_14 : "BA";
+DA = MESZL_561 : "DA";
+GA = MESZL_491 : "GA";
+HA = MESZL_856 : "HA";
+KA = MESZL_24 : "KA";
+LA = MESZL_89 : "LA";
+MA = MESZL_552 : "MA";
+NA = MESZL_110 : "NA";
+PA = MESZL_464 : "PA";
+QA = MESZL_99 : "QA";
+RA = MESZL_511 : "RA";
+SA = MESZL_172 : "SA";
+TA = MESZL_248 : "TA";
+ZA = MESZL_851 : "ZA";
+
+EB = MESZL_807 : "EB";
+ED = MESZL_560 : "ED";
+EG = MESZL_136 : "EG";
+EH = MESZL_636 : "EH";
+EK = MESZL_136 : "EK";
+EL = MESZL_899 : "EL";
+EM = MESZL_641 : "EM";
+EN = MESZL_164 : "EN";
+EP = MESZL_807 : "EP";
+EQ = MESZL_136 : "EQ";
+ER = MESZL_437 : "ER";
+ES = MESZL_469 : "ES";
+ET = MESZL_560 : "ET";
+EZ = MESZL_469 : "EZ";
+
+BE = MESZL_113 : "BE";
+DE = MESZL_736 : "DE";
+GE = MESZL_141 : "GE";
+HE = MESZL_631 : "HE";
+KE = MESZL_737 : "KE";
+LE = MESZL_85 : "LE";
+ME = MESZL_753 : "ME";
+NE = MESZL_313 : "NE";
+PE = MESZL_598 : "PE";
+QE = MESZL_815 : "QE";
+RE = MESZL_142 : "RE";
+SE = MESZL_181 : "SE";
+TE = MESZL_589 : "TE";
+ZE = MESZL_140 : "ZE";
+
+IB = MESZL_807 : "IB";
+ID = MESZL_560 : "ID";
+IG = MESZL_136 : "IG";
+IH = MESZL_636 : "IH";
+IK = MESZL_136 : "IK";
+IL = MESZL_348 : "IL";
+IM = MESZL_641 : "IM";
+IN = MESZL_261 : "IN";
+IP = MESZL_807 : "IP";
+IQ = MESZL_136 : "IQ";
+IR = MESZL_437 : "IR";
+IS = MESZL_469 : "IS";
+IT = MESZL_560 : "IT";
+IZ = MESZL_469 : "IZ";
+
+BI = MESZL_358 : "BI";
+DI = MESZL_736 : "DI";
+GI = MESZL_141 : "GI";
+HI = MESZL_631 : "HI";
+KI = MESZL_737 : "KI";
+LI = MESZL_85 : "LI";
+MI = MESZL_681 : "MI";
+NI = MESZL_380 : "NI";
+PI = MESZL_598 : "PI";
+QI = MESZL_815 : "QI";
+RI = MESZL_142 : "RI";
+SI = MESZL_181 : "SI";
+TI = MESZL_118 : "TI";
+ZI = MESZL_140 : "ZI";
+
+UB = MESZL_504 : "UB";
+UD = MESZL_596 : "UD";
+UG = MESZL_296 : "UG";
+UH = MESZL_636 : "UH";
+UK = MESZL_296 : "UK";
+UL = MESZL_698 : "UL";
+UM = MESZL_238 : "UM";
+UN = MESZL_501 : "UN";
+UP = MESZL_504 : "UP";
+UQ = MESZL_296 : "UQ";
+UR = MESZL_828 : "UR";
+US = MESZL_583 : "US";
+UT = MESZL_596 : "UT";
+UZ = MESZL_583 : "UZ";
+
+BU = MESZL_580 : "BU";
+DU = MESZL_350 : "DU";
+GU = MESZL_891 : "GU";
+HU = MESZL_132 : "HU";
+KU = MESZL_808 : "KU";
+LU = MESZL_812 : "LU";
+MU = MESZL_98 : "MU";
+NU = MESZL_112 : "NU";
+PU = MESZL_580 : "PU";
+QU = MESZL_339 : "QU";
+RU = MESZL_111 : "RU";
+SU = MESZL_16 : "SU";
+TU = MESZL_86 : "TU";
+ZU = MESZL_15 : "ZU";
+
+A = MESZL_839 : "A";
+E = MESZL_498 : "E";
+I = MESZL_252 : "I";
+U = MESZL_661 : "U";
+
+sumerograms = Optimize[AB | AD | AG | AH | AK | AL | AM | AN | AP | AQ | AR | AS | AT | AZ |
+                       BA | DA | GA | HA | KA | LA | MA | NA | PA | QA | RA | SA | TA | ZA |
+                       EB | ED | EG | EH | EK | EL | EM | EN | EP | EQ | ER | ES | ET | EZ |
+                       BE | DE | GE | HE | KE | LE | ME | NE | PE | QE | RE | SE | TE | ZE |
+                       IB | ID | IG | IH | IK | IL | IM | IN | IP | IQ | IR | IS | IT | IZ |
+                       BI | DI | GI | HI | KI | LI | MI | NI | PI | QI | RI | SI | TI | ZI |
+                       UB | UD | UG | UH | UK | UL | UM | UN | UP | UQ | UR | US | UT | UZ |
+                       BU | DU | GU | HU | KU | LU | MU | NU | PU | QU | RU | SU | TU | ZU |
+                       A | E | I | U];
+
+separator = (("" : "-") | (space : space));
+
+translit = sumerograms separator;
+
+export MAIN = Optimize[
+    (translit | space)+
+];
