@@ -12,16 +12,42 @@
         <div class="jumbotron">
             <a href="https://github.com/wincentbalin/cuneiform-book-cuneifier"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
             <h1 class="display-4"><b>cuneiform</b> book cuneifier</h1>
-            <p class="lead">This is a simple cuneifier&hellip; <a href="https://github.com/wincentbalin/cuneiform-book-cuneifier">Go to the source code&hellip;</a></p>
+            <p class="lead">This is a simple cuneifier, based upon the table on pages 102 and 103 in the <a href="https://www.britishmuseumshoponline.org/cuneiform.html"><b>cuneiform</b> book</a>. Technically, it was written in <a href="http://www.opengrm.org/twiki/bin/view/GRM/Thrax">OpenGRM Thrax</a>.</p>
+            <p class="lead">Type!</p>
             <hr class="my-4">
-            <input id="cuneiformInput" class="display-4" type="text" placeholder="Try, for example, ta-ab-le-et"/>
+            <div class="row form-group">
+                <input id="cuneiformInput" class="form-control form-control-lg" type="text" placeholder="Try, for example, ta-ab-le-et" autofocus/>
+            </div>
             <p id="cuneiformOutput" class="display-4">𒋫𒀊𒇷𒀉</p>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
+        $(function() {
+            var delayInterval = 1500 /* ms */,
+                input = $('#cuneiformInput'),
+                output = $('#cuneiformOutput'),
+                delay = function(callback, ms) { // SO:1909441
+                    var timer = 0;
+                    return function() {
+                        var context = this,
+                            args = arguments;
+                        clearTimeout(timer);
+                        timer = setTimeout(function() {
+                            callback.apply(context, args);
+                        }, ms || 0);
+                    };
+                };
+            
+            input.on('input', delay(function(event) {
+                console.log(input.val());
+                jQuery.get('https://wincent.balin.at/cgi-bin/cuneifier1?input=' + input.val(), function(data) {
+                    output.text(data === 'Rewrite failed.\n' ? '???' : data);
+                });
+            }, delayInterval));
+        });
     </script>
 </body>
 </html>
