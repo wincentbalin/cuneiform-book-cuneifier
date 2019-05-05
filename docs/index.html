@@ -42,7 +42,6 @@
                 };
             
             input.on('input', delay(function(event) {
-                console.log(input.val());
                 jQuery.get('https://wincent.balin.at/cgi-bin/cuneifier1?input=' + input.val(), function(data) {
                     output.text(data === 'Rewrite failed.\n' ? '???' : data);
                 });
