@@ -4,6 +4,8 @@ This is a converter from transliterated syllables from the pp. 102-103 of the bo
 
 # How to use
 
+_Prerequisite: copy file `byte.grm` from your Thrax installation into the repository; if Thrax is installed in `/usr/local`, the `Makefile` will do it automatically._
+
 Create `cuneiform-latin.far` file by typing `make` in the repository directory. Then type either
 
 ```
