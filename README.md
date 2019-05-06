@@ -2,6 +2,22 @@
 
 This is a converter from transliterated syllables from the pp. 102-103 of the book [**cuneiform**](https://www.britishmuseumshoponline.org/cuneiform.html) (ISBN: 978-0-7141-1188-9), implemented in [OpenGRM Thrax](http://www.opengrm.org/twiki/bin/view/GRM/Thrax). It is licensed under [Apache 2.0 License](LICENSE).
 
+# How to use
+
+1. Create `cuneiform-latin.far` file by typing `make` in the repository directory.
+2. Type either
+
+```
+make test
+```
+
+or 
+
+```
+thraxrewrite-tester --far=cuneiform-latin.far --rules=Cuneifier
+```
+
+to test the cuneifier.
 
 # References
 
