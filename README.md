@@ -4,8 +4,7 @@ This is a converter from transliterated syllables from the pp. 102-103 of the bo
 
 # How to use
 
-1. Create `cuneiform-latin.far` file by typing `make` in the repository directory.
-2. Type either
+Create `cuneiform-latin.far` file by typing `make` in the repository directory. Then type either
 
 ```
 make test
