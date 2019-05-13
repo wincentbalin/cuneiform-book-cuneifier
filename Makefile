@@ -10,7 +10,7 @@ byte.grm: /usr/local/share/thrax/grammars/byte.grm
 diagram: cuneiform-latin.far
 	farextract $<
 	fstdraw Cuneifier > Cuneifier.dot
-	dot -Gdpi=600 -o Cuneifier.png -Tpng Cuneifier.dot
+	dot -Gdpi=600 -Grankdir=LR -o Cuneifier.png -Tpng Cuneifier.dot
 	rm Cuneifier.dot Cuneifier
 
 test: cuneiform-latin.far
