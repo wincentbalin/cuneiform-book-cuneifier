@@ -14,3 +14,7 @@ byte.far
 
 # Ignore thraxrewrite-tester history file
 .rewrite-tester-history
+
+# Ignore test files
+byte.grm
+test.txt
